@@ -5,6 +5,6 @@ module.exports = {
     src: '/_dist_',
   },
   buildOptions: {
-    baseUrl: '',
+    baseUrl: 'https://github.com/ralerv/Platzi-DOM-handling-workshop-1',
   },
 }
