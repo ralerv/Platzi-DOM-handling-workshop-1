@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 20px 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container__div{
+    text-align: center;
+}
+
+.container__sign{
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem;
+    color: rgb(148 163 184);
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.container__title{
+    margin-top: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.875rem;
+    line-height: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: rgb(17 24 39);
+
+}
+
+/*sm:text-4xl sm:leading-10*/
+
+.app{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.app__card{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.app__card img{
+    height: 4rem;
+    border-radius: 100%;
+    width: 4rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.app__card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    gap: 2px;
+}
+
+.app__card__info h2{
+    margin: 0;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.app__card__info span{
+    color: rgba(128,128,128)
+}
+
+.app__card:hover{
+    background-color: rgba(128,128,128,0.3)
+}
+
+@media (min-width: 768px) {
+    .app{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .container {
+        padding: 20px 16px;
+    }
+    .app__card img{
+        height: 6rem;
+        width: 6rem;
+        margin-left: 0rem;
+        margin-right: 1.5rem;
+
+    }
+    .app__card__info {
+        gap: 4px;
+    }
+    .container__title{
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+}
